@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Senja</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kopitua: '#3A271D',
+                        krem: '#FDFBF7',
+                        kremMuda: '#EFE3D3',
+                        hijau: '#5F7161',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-krem text-kopitua">
+    <nav class="bg-kopitua text-krem p-4 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center"> <a href="#" class="text-xl font-bold tracking-widest font-serif">Kopi Senja</a> <div class="hidden md:flex space-x-8 font-medium text-sm tracking-wide">
+                <a href="#home" class="hover:text-kremMuda transition">Home</a>
+                <a href="#about" class="hover:text-kremMuda transition">About Us</a>
+                <a href="#menu" class="hover:text-kremMuda transition">Menu</a>
+                <a href="#services" class="hover:text-kremMuda transition">Services</a>
+                <a href="#contact" class="hover:text-kremMuda transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="h-[80vh] flex items-center justify-center bg-cover bg-center bg-no-repeat relative" style="background-image: url('foto/bgawal.jpeg');">
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <div class="relative z-10 text-center text-krem px-6 max-w-2xl">
+            <h1 class="text-3xl md:text-6xl font-serif font-bold mb-4 leading-tight">Secangkir Ketenangan di Tengah Hiruk Pikuk</h1>
+            
+            <p class="text-sm md:text-lg mb-8 italic text-kremMuda leading-relaxed">"Menyajikan kopi dengan metode tradisional, diracik sepenuh hati untuk mengembalikan fokus hari Anda."</p>
+            
+            <a href="#menu" class="bg-hijau text-krem px-6 py-3 rounded text-sm font-semibold hover:bg-hijau/90 transition shadow-lg inline-block">Jelajahi Menu</a> </div>
+    </section>
+
+    <section id="about" class="py-20 px-6 max-w-3xl mx-auto text-center">
+    <span class="text-hijau font-bold text-xs tracking-widest block mb-2">Kisah Sejak 2025</span>
+    <h2 class="text-3xl font-serif font-bold mb-6">Mengapa Kopi Senja?</h2>
+    <p class="text-base leading-relaxed text-justify md:text-center text-kopitua/80 mb-6">
+        Kami percaya bahwa kopi bukan sekadar penahan kantuk, melainkan sebuah medium untuk bertukar cerita. Berawal dari sebuah garasi kecil di sudut kota , kami berkomitmen hanya mengambil biji kopi langsung dari petani lokal secara adil.
+    </p>
+    <p class="text-base leading-relaxed text-justify md:text-center text-kopitua/80">
+        Setiap cangkir yang Anda nikmati di sini melintasi proses panjang: disortir manual dengan teliti, disangrai dengan profil rasa klasik, dan diseduh dengan presisi tinggi oleh barista kami.
+    </p>
+</section>
+
+    <section id="menu" class="bg-kremMuda/30 py-20 px-6">
+    <div class="container mx-auto max-w-5xl">
+        <h2 class="text-3xl font-serif font-bold text-center mb-12">Menu Terfavorit</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-krem rounded-lg overflow-hidden shadow-md group">
+                <div class="h-48 overflow-hidden">
+                    <img src="foto/latte.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="Latte">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-serif font-bold text-lg">Latte</h3>
+                        <span class="text-xs bg-hijau text-krem px-2 py-1 rounded">Best Seller</span>
+                    </div>
+                    <p class="text-xs text-kopitua/70">Perpaduan espresso ganda dengan susu murni yang di-steam lembut, menciptakan rasa manis alami.</p>
+                </div>
+            </div>
+
+            <div class="bg-krem rounded-lg overflow-hidden shadow-md group">
+                <div class="h-48 overflow-hidden">
+                    <img src="foto/macchiato.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="Macchiato">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-serif font-bold text-lg mb-2">Macchiato</h3>
+                    <p class="text-xs text-kopitua/70">Double shot espresso murni premium yang "ditandai" dengan sesendok foam susu lembut di atasnya untuk menjinakkan keasaman kopi tanpa menghilangkan kepekatan rasanya.</p>
+                </div>
+            </div>
+
+            <div class="bg-krem rounded-lg overflow-hidden shadow-md group">
+                <div class="h-48 overflow-hidden">
+                    <img src="foto/americano.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="Americano">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-serif font-bold text-lg mb-2">Americano</h3>
+                    <p class="text-xs text-kopitua/70">Cara minum kopi hitam yang bersih dan ringan. Espresso premium yang diencerkan dengan air panas dalam rasio tepat, menghasilkan aroma kaya yang nyaman dinikmati santai.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="py-20 px-6 container mx-auto max-w-5xl">
+    <h2 class="text-3xl font-serif font-bold text-center mb-12">Fasilitas & Layanan</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="border border-kopitua/10 p-8 rounded-lg text-center hover:border-hijau transition">
+            <span class="text-3xl block mb-4">📶</span>
+            <h3 class="font-serif font-bold text-lg mb-2">Koneksi Cepat & Stabil</h3>
+            <p class="text-xs text-kopitua/70">Dilengkapi Wi-Fi bisnis berkecepatan tinggi dan colokan listrik melimpah di setiap meja untuk kebutuhan kerja remote.</p>
+        </div>
+        <div class="border border-kopitua/10 p-8 rounded-lg text-center hover:border-hijau transition">
+            <span class="text-3xl block mb-4">🎨</span>
+            <h3 class="font-serif font-bold text-lg mb-2">Ruang Komunitas</h3>
+            <p class="text-xs text-kopitua/70">Area lantai dua yang luas, dapat disewa dan ditata ulang untuk kebutuhan rapat, lokakarya, atau pameran seni mini.</p>
+        </div>
+        <div class="border border-kopitua/10 p-8 rounded-lg text-center hover:border-hijau transition">
+            <span class="text-3xl block mb-4">🏍️</span>
+            <h3 class="font-serif font-bold text-lg mb-2">Layanan Antar / Drive-thru</h3>
+            <p class="text-xs text-kopitua/70">Ingin menikmati kopi kami di rumah? Kami tersedia di seluruh platform ojek online favorit Anda dengan pengemasan aman.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="bg-kopitua text-krem py-16 px-6">
+    <div class="container mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+            <h2 class="text-3xl font-serif font-bold mb-4">Mari Singgah</h2>
+            <p class="text-sm text-kremMuda/80 mb-6">Kami berlokasi di pinggir kota, tempat terbaik untuk melarikan diri sejenak dari penatnya rutinitas harian.</p>
+            <div class="space-y-3 text-sm">
+                <p>📍 <strong>Alamat:</strong> Jl. Angkrek No. 37</p>
+                <p>📞 <strong>Telepon/WA:</strong> +62 812-3456-7890</p>
+                <p>✉️ <strong>Email:</strong> halo@senjaseduh.com</p>
+            </div>
+        </div>
+        
+        <div class="bg-krem text-kopitua p-8 rounded-lg shadow-xl flex flex-col justify-center">
+            <h3 class="font-serif font-bold text-xl mb-4 text-center border-b border-kopitua/20 pb-2">Jam Operasional</h3>
+            <div class="space-y-2 text-sm">
+                <div class="flex justify-between"><span>Senin - Jumat:</span><span class="font-semibold">09:00 - 22:00 WIB</span></div>
+                <div class="flex justify-between"><span>Sabtu - Minggu:</span><span class="font-semibold">08:00 - 23:00 WIB</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-[#2A1C14] text-krem/50 text-xs py-6 text-center border-t border-krem/5">
+    <p>&copy; 2026 Senja & Seduh Cafe. Hak Cipta Dilindungi. Dibuat dengan penuh rasa hormat terhadap cita rasa.</p>
+</footer>
+</body>
+</html>
